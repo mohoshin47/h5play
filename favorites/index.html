@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0B0E1A" />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="Open your saved h5play browser games." />
+    <link rel="canonical" href="https://h5play.xyz/favorites/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://h5play.xyz/favorites/" />
+    <meta property="og:title" content="Favorite Browser Games | h5play" />
+    <meta property="og:description" content="Open your saved h5play browser games." />
+    <meta property="og:site_name" content="h5play" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Favorite Browser Games | h5play" />
+    <meta name="twitter:description" content="Open your saved h5play browser games." />
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var path = params.get("p");
+        if (!path) return;
+        var query = params.get("q");
+        window.history.replaceState(null, "", path + (query ? "?" + query : "") + window.location.hash);
+      }());
+    </script>
+    <title>Favorite Browser Games | h5play</title>
+    <script id="page-structured-data" type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://h5play.xyz/#organization",
+            "name": "h5play",
+            "url": "https://h5play.xyz/"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://h5play.xyz/#website",
+            "name": "h5play",
+            "url": "https://h5play.xyz/",
+            "publisher": {
+              "@id": "https://h5play.xyz/#organization"
+            },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://h5play.xyz/#webpage",
+            "url": "https://h5play.xyz/",
+            "name": "Free HTML5 Mini-Games | h5play",
+            "description": "Play original memory, number merge, Tic Tac Toe, and Snake mini-games on h5play.",
+            "isPartOf": {
+              "@id": "https://h5play.xyz/#website"
+            },
+            "inLanguage": "en"
+          }
+        ]
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-CvSyQEV2.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/jsx-runtime-BKuN1J8J.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-DTP5_oGg.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
